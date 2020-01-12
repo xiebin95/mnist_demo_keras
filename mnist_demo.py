@@ -40,7 +40,7 @@ X_train = X_train.reshape(X_train.shape[0], 28, 28, 1).astype('float32')
 X_test = X_test.reshape(X_test.shape[0], 28, 28, 1).astype('float32')
 
 #将数据reshape，CNN的输入是4维的张量（可看做多维的向量），
-# 第一维是样本规模（N），第二维是像素通道（C），第三维和第四维是长度（H）和宽度（W）。(GPU模型NCHW)（CPU模型NCHW）
+# 第一维是样本规模（N），第二维是像素通道（C），第三维和第四维是长度（H）和宽度（W）。(GPU模型NCHW)（CPU模型NHWC）
 # 并将数值归一化和类别标签向量化。
 
 
